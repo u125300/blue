@@ -8,16 +8,9 @@ addons:
   apt:
     sources:
       - ubuntu-toolchain-r-test
-      - sourceline: 'ppa:kojoley/boost'
+      - sourceline: 'ppa:kxstudio-debian/testing'
     packages:
-      - libboost1.58-dev
-      - libboost-filesystem1.58-dev
-      - libboost-locale1.58-dev
-      - libboost-program-options1.58-dev
-      - libboost-regex1.58-dev
-      - libboost-system1.58-dev
-      - libboost-timer1.58-dev
-      - libboost-chrono1.58-dev
+      - boost-static
 
 script:
 - 'git clone https://github.com/stream009/libadblock.git'

@@ -4,11 +4,20 @@ sudo: required
 notifications:
   email: false
 
-before_install:
-- echo y | sudo add-apt-repository ppa:kojoley/boost
-- sudo apt-get update
-- sudo apt-get install libboost1.58-dev
-- sudo apt-get install libboost1.58-all-dev
+addons:
+  apt:
+    sources:
+      - ubuntu-toolchain-r-test
+      - sourceline: 'ppa:kojoley/boost'
+    packages:
+      - libboost1.58-dev
+      - libboost-filesystem1.58-dev
+      - libboost-locale1.58-dev
+      - libboost-program-options1.58-dev
+      - libboost-regex1.58-dev
+      - libboost-system1.58-dev
+      - libboost-timer1.58-dev
+      - libboost-chrono1.58-dev
 
 script:
 - 'git clone https://github.com/stream009/libadblock.git'

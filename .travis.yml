@@ -7,7 +7,8 @@ notifications:
 before_install:
 - echo y | sudo add-apt-repository ppa:kojoley/boost
 - sudo apt-get update
-- sudo apt-get install --install-suggests boost1.58-dev
+- sudo apt-get install libboost1.58-dev
+- sudo apt-get install libboost1.58-all-dev
 
 script:
 - 'git clone https://github.com/stream009/libadblock.git'

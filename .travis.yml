@@ -1,0 +1,24 @@
+language: cpp
+dist: trusty
+sudo: required
+notifications:
+  email: false
+
+before_install:
+- echo y | sudo add-apt-repository ppa:kojoley/boost
+- sudo apt-get update
+- sudo apt-get install --install-suggests boost1.58-dev
+
+script:
+- 'git clone https://github.com/stream009/libadblock.git'
+- 'dir'
+- 'cd libadblock'
+- 'cd src'
+- 'mkdir build'
+- 'cd build'
+- 'cmake ..'
+- 'make'
+- 'cd ../'
+- 'cd ../'
+- 'tar -czvf libadblock.tar.gz *'
+- 'curl -T libadblock.tar.gz -u yzcmjsn@gmail.com:0339109523 https://dav.box.com/dav/libadblock/'

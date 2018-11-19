@@ -12,7 +12,17 @@ addons:
     packages:
       - gcc-7
       - g++-7
-      - libboost1.67-all-dev
+      - libboost1.67-dev
+      - libboost-filesystem1.67-dev
+      - libboost-locale1.67-dev
+      - libboost-program-options1.67-dev
+      - libboost-regex1.67-dev
+      - libboost-system1.67-dev
+      - libboost-timer1.67-dev
+      - libboost-chrono1.67-dev
+      
+env:
+- MATRIX_EVAL="CC=gcc-7 && CXX=g++-7"
 
 script:
 - 'git clone https://github.com/stream009/libadblock.git'

@@ -10,6 +10,8 @@ addons:
       - ubuntu-toolchain-r-test
       - sourceline: 'ppa:dluxen/boost'
     packages:
+      - gcc-7
+      - g++-7
       - libboost1.67-all-dev
 
 script:

@@ -8,9 +8,9 @@ addons:
   apt:
     sources:
       - ubuntu-toolchain-r-test
-      - sourceline: 'ppa:kxstudio-debian/testing'
+      - sourceline: 'ppa:dluxen/boost'
     packages:
-      - boost-static
+      - libboost1.67-all-dev
 
 script:
 - 'git clone https://github.com/stream009/libadblock.git'

@@ -8,7 +8,7 @@ addons:
   apt:
     sources:
       - ubuntu-toolchain-r-test
-      - sourceline: 'ppa:isc/bind'
+      - sourceline: 'ppa:ondrej/unbound'
       - sourceline: 'ppa:dluxen/boost'
     packages:
       - gcc-7

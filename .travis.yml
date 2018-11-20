@@ -8,7 +8,7 @@ addons:
   apt:
     sources:
       - ubuntu-toolchain-r-test
-      - isc/bind
+      - isc-bind
       - sourceline: 'ppa:dluxen/boost'
     packages:
       - gcc-7

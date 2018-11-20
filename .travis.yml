@@ -8,10 +8,12 @@ addons:
   apt:
     sources:
       - ubuntu-toolchain-r-test
+      - isc/bind
       - sourceline: 'ppa:dluxen/boost'
     packages:
       - gcc-7
       - g++-7
+      - googletest
       - libboost1.67-all-dev
 env:
   - MATRIX_EVAL="CC=gcc-7 && CXX=g++-7"
